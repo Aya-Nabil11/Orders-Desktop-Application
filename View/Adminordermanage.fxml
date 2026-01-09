@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="706.0" prefWidth="1101.0" stylesheets="@../Stylesheets/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="addbtn" focusTraversable="false" layoutX="151.0" layoutY="572.0" mnemonicParsing="false" onAction="#addHandle" prefHeight="40.0" prefWidth="60.0" text="Add" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView fx:id="tableView" focusTraversable="false" layoutX="513.0" layoutY="68.0" prefHeight="604.0" prefWidth="579.0">
+        <columns>
+          <TableColumn fx:id="tcid" prefWidth="94.0" text="Id" />
+            <TableColumn fx:id="tcproductid" prefWidth="122.0" text="Product Id" />
+          <TableColumn fx:id="tcuserid" prefWidth="99.0" text="User id" />
+            <TableColumn fx:id="tcquantity" prefWidth="102.0" text="Quantity" />
+            <TableColumn fx:id="tcdate" minWidth="0.0" prefWidth="161.0" text="Date" />
+        </columns>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TableView>
+      <Button fx:id="viewbtn" focusTraversable="false" layoutX="223.0" layoutY="572.0" mnemonicParsing="false" onAction="#viewHandle" prefHeight="40.0" prefWidth="60.0" text="View" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button focusTraversable="false" layoutX="299.0" layoutY="572.0" mnemonicParsing="false" onAction="#resetHandle" prefHeight="40.0" prefWidth="60.0" text="Reset" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="backbtn" focusTraversable="false" layoutX="1009.0" layoutY="14.0" mnemonicParsing="false" onAction="#backHandle" prefHeight="31.0" prefWidth="57.0" text="---&gt;" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button focusTraversable="false" layoutX="368.0" layoutY="572.0" mnemonicParsing="false" onAction="#searchHandle" prefHeight="40.0" prefWidth="66.0" text="search" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="44.0" fitWidth="70.0" layoutX="59.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/admin.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="114.0" layoutY="45.0" prefHeight="31.0" prefWidth="230.0" text="Admin -- Home -- manage Orders" textFill="#277997">
+         <font>
+            <Font name="Rockwell Condensed" size="20.0" />
+         </font>
+      </Label>
+      <ListView fx:id="clientsListView" layoutX="59.0" layoutY="120.0" prefHeight="255.0" prefWidth="211.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ListView>
+      <ListView fx:id="productListView" layoutX="283.0" layoutY="120.0" prefHeight="255.0" prefWidth="211.0" />
+      <DatePicker fx:id="date" layoutX="149.0" layoutY="401.0" prefHeight="25.0" prefWidth="300.0" promptText="Date" />
+      <TextField fx:id="clientid" layoutX="149.0" layoutY="506.0" prefHeight="25.0" prefWidth="300.0" promptText="Client-id">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="quantity" layoutX="149.0" layoutY="451.0" prefHeight="25.0" prefWidth="300.0" promptText="Quantity">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <Label layoutX="344.0" layoutY="88.0" text="Products" textFill="#277997">
+         <font>
+            <Font name="Arial Narrow" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="139.0" layoutY="88.0" text="Clients" textFill="#277997">
+         <font>
+            <Font name="Arial Narrow" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

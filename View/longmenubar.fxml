@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="1101.0" stylesheets="@../Stylesheets/menubar.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LongmenubarController">
+   <children>
+      <MenuBar fx:id="menubar" prefHeight="46.0" prefWidth="1101.0" style="-fx-background-color: rgb(05,145,180);">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#exsitHandle" text="Exsit">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/button.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Format">
+               <items>
+                  <Menu mnemonicParsing="false" text="Font Size">
+                     <items>
+                        <RadioMenuItem mnemonicParsing="false" onAction="#handle14" text="14">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="a" />
+                           </toggleGroup>
+                        </RadioMenuItem>
+                        <RadioMenuItem mnemonicParsing="false" onAction="#handle15" text="15" toggleGroup="$a" />
+                        <RadioMenuItem mnemonicParsing="false" onAction="#handle16" text="16" toggleGroup="$a" />
+                        <RadioMenuItem mnemonicParsing="false" onAction="#handle17" text="17" toggleGroup="$a" />
+                        <RadioMenuItem mnemonicParsing="false" onAction="#handle18" text="18" toggleGroup="$a" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Font Family">
+                     <items>
+                        <RadioMenuItem mnemonicParsing="false" onAction="#arialHandle" text="Arial">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="b" />
+                           </toggleGroup>
+                        </RadioMenuItem>
+                        <RadioMenuItem mnemonicParsing="false" onAction="#centaurHandle" text="Centaur" toggleGroup="$b" />
+                        <RadioMenuItem mnemonicParsing="false" onAction="#SansSerifHandle" text="SansSerif" toggleGroup="$b" />
+                        <RadioMenuItem mnemonicParsing="false" onAction="#arialNarrowHandle" text="arialNarrow" toggleGroup="$b" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Background color">
+                     <items>
+                        <RadioMenuItem mnemonicParsing="false" onAction="#orangeHandle" text="Orange">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="c" />
+                           </toggleGroup>
+                        </RadioMenuItem>
+                        <RadioMenuItem mnemonicParsing="false" onAction="#roseHandle" text="Rose" toggleGroup="$c" />
+                        <RadioMenuItem mnemonicParsing="false" onAction="#skyHandle" text="Gray" toggleGroup="$c" />
+                        <RadioMenuItem mnemonicParsing="false" onAction="#shadowHandle" text="Shadow" toggleGroup="$c" />
+                        <RadioMenuItem mnemonicParsing="false" onAction="#tealHandle" text="Teal" toggleGroup="$c" />
+                     </items>
+                  </Menu>
+               </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#aboutappHandle" text="About App">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/booking.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</HBox>

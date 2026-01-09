@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="706.0" prefWidth="1101.0" stylesheets="@../Stylesheets/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="addbtn" focusTraversable="false" layoutX="108.0" layoutY="517.0" mnemonicParsing="false" onAction="#addHandle" prefHeight="44.0" prefWidth="63.0" text="Add" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView fx:id="tableView" focusTraversable="false" layoutX="551.0" layoutY="68.0" prefHeight="604.0" prefWidth="503.0">
+        <columns>
+          <TableColumn fx:id="tcid" prefWidth="85.0" text="Id" />
+            <TableColumn fx:id="tcproductid" prefWidth="135.0" text="Product Id" />
+            <TableColumn fx:id="tcquantity" prefWidth="138.0" text="Quantity" />
+            <TableColumn fx:id="tcdate" minWidth="0.0" prefWidth="144.0" text="Date" />
+        </columns>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TableView>
+      <Button fx:id="viewbtn" focusTraversable="false" layoutX="292.0" layoutY="517.0" mnemonicParsing="false" onAction="#viewHandle" prefHeight="44.0" prefWidth="62.0" text="View" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button focusTraversable="false" layoutX="292.0" layoutY="580.0" mnemonicParsing="false" onAction="#resetHandle" prefHeight="44.0" prefWidth="63.0" text="Reset" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="backbtn" focusTraversable="false" layoutX="1009.0" layoutY="14.0" mnemonicParsing="false" onAction="#backHandle" prefHeight="31.0" prefWidth="57.0" text="---&gt;" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button focusTraversable="false" layoutX="108.0" layoutY="580.0" mnemonicParsing="false" onAction="#searchHandle" prefHeight="44.0" prefWidth="63.0" text="search" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="44.0" fitWidth="70.0" layoutX="59.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/profile.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="114.0" layoutY="45.0" prefHeight="31.0" prefWidth="230.0" text="Client -- Home -- manage Orders" textFill="#277997">
+         <font>
+            <Font name="Rockwell Condensed" size="20.0" />
+         </font>
+      </Label>
+      <ListView fx:id="productsListView" layoutX="139.0" layoutY="133.0" prefHeight="219.0" prefWidth="191.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ListView>
+      <DatePicker fx:id="date" layoutX="85.0" layoutY="421.0" prefHeight="25.0" prefWidth="300.0" promptText="Date" />
+      <TextField fx:id="orderid" layoutX="85.0" layoutY="464.0" prefHeight="25.0" prefWidth="300.0" promptText="Order Id">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="quantity" layoutX="85.0" layoutY="370.0" prefHeight="25.0" prefWidth="300.0" promptText="Quantity">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <Label layoutX="197.0" layoutY="95.0" prefHeight="30.0" prefWidth="76.0" text="Products">
+         <font>
+            <Font name="Arial Narrow" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="editbtn" focusTraversable="false" layoutX="198.0" layoutY="517.0" mnemonicParsing="false" onAction="#editHandle" prefHeight="44.0" prefWidth="63.0" text="Edit" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button focusTraversable="false" layoutX="198.0" layoutY="580.0" mnemonicParsing="false" onAction="#deleteHandle" prefHeight="44.0" prefWidth="63.0" text="Delete" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

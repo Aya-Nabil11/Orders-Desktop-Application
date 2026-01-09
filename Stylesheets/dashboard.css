@@ -1,0 +1,65 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : May 13, 2023, 3:46:57 AM
+    Author     : aya
+*/
+
+
+.btn{
+   -fx-border-radius: 40;
+   -fx-background-radius: 40;
+   -fx-padding-left:60;
+   -fx-padding-right:60;
+     -fx-font-weight: bold;
+}
+.orange{
+    -fx-background-color: #f5eadc;
+}
+.orange:hover {
+  -fx-background-color: #f5e1c6;
+}
+.green{
+    -fx-background-color:  #e4f5dc;
+}
+.green:hover {
+  -fx-background-color: #d5f5c6;
+}
+.lightblue{
+    -fx-background-color:  #dcf5f5;
+}
+.lightblue:hover {
+  -fx-background-color: #c1f5f5;
+}
+.burble{
+    -fx-background-color:  #dedcf5;
+}
+.burble:hover {
+  -fx-background-color: #c8c5f0;
+}
+.pink{
+    -fx-background-color:  #f5dced;
+}
+.pink:hover {
+  -fx-background-color: #f2c9e5;
+}
+.fav:hover {
+  -fx-background-color: #f5c4c8;
+}
+.fav{
+    -fx-background-color:  #f5dcde;
+}
+
+.image-view {
+    -fx-border-radius: 50%;
+    -fx-background-radius: 50%;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+}
+
+
+
+
+

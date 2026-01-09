@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<FlowPane alignment="CENTER" hgap="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="706.0" prefWidth="1101.0" rowValignment="TOP" stylesheets="@../Stylesheets/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginpageController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="706.0" prefWidth="499.0" style="-fx-background-color: rgb(05,145,180);">
+         <children>
+            <Label prefHeight="79.0" prefWidth="190.0" styleClass="l" text="Orders " textFill="#f4f4f4" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Andalus" size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="-50.0" />
+               </padding>
+            </Label>
+            <Label prefHeight="54.0" prefWidth="192.0" styleClass="l" text="Application" textFill="WHITE">
+               <font>
+                  <Font name="Andalus" size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="-50.0" />
+               </padding>
+            </Label>
+            <ImageView fitHeight="481.0" fitWidth="486.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-radius: 12px;">
+               <image>
+                  <Image url="@../images/111.jpg" />
+               </image>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets top="30.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="CENTER_RIGHT" fillWidth="false" prefHeight="706.0" prefWidth="582.0" spacing="30.0">
+         <children>
+            <ImageView fitHeight="113.0" fitWidth="191.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/fotor_2023-5-13_16_45_39.png" />
+               </image>
+               <VBox.margin>
+                  <Insets right="240.0" top="-50.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label prefHeight="20.0" prefWidth="362.0" styleClass="l" text="Sign in" textFill="#0591b4">
+               <font>
+                  <Font name="Arial Narrow" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="-40.0" left="12.0" top="-60.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="email" focusTraversable="false" prefHeight="40.0" prefWidth="358.0" promptText="Email">
+               <VBox.margin>
+                  <Insets right="120.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font></TextField>
+            <PasswordField fx:id="password" focusTraversable="false" prefHeight="40.0" prefWidth="358.0" promptText="Password">
+               <VBox.margin>
+                  <Insets right="120.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </PasswordField>
+            <Button mnemonicParsing="false" onAction="#signinHandle" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: rgb(05,145,180); -fx-background-radius: 5;" text="Sign in" textFill="WHITE">
+               <VBox.margin>
+                  <Insets right="120.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Separator prefHeight="11.0" prefWidth="361.0">
+               <VBox.margin>
+                  <Insets right="120.0" />
+               </VBox.margin></Separator>
+            <Label text="or">
+               <VBox.margin>
+                  <Insets right="270.0" top="-46.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="12.0" right="12.0" />
+               </padding>
+            </Label>
+            <Button fx:id="signup" mnemonicParsing="false" onAction="#signupHandle" prefHeight="40.0" prefWidth="349.0" style="-fx-background-color: rgb(05,145,180); -fx-background-radius: 5;" text="sign up" textFill="WHITE">
+               <VBox.margin>
+                  <Insets right="120.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+         <FlowPane.margin>
+            <Insets left="-30.0" />
+         </FlowPane.margin>
+      </VBox>
+   </children>
+</FlowPane>

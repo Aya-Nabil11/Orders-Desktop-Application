@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="831.0" prefWidth="1124.0" stylesheets="@../Stylesheets/dashboard.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="836.0" prefWidth="717.0">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="103.0" prefWidth="717.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="58.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/profile.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label prefHeight="54.0" prefWidth="596.0" text="Client----Home" textAlignment="CENTER" textFill="#277997">
+                     <font>
+                        <Font name="Rockwell Condensed" size="25.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="206.0" prefWidth="717.0" spacing="60.0">
+               <children>
+                  <Button fx:id="profile" mnemonicParsing="false" onAction="#profileHandle" prefHeight="130.0" prefWidth="150.0" text="Profile" textFill="#cd922c">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="orange" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="viewInvoices" mnemonicParsing="false" onAction="#viewInvoicesHandle" prefHeight="130.0" prefWidth="150.0" text="View Invoices" textFill="#55a839">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="green" />
+                     </styleClass>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="188.0" prefWidth="717.0" spacing="60.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#manageOrdersHandle" prefHeight="130.0" prefWidth="150.0" text="Manage Orders" textFill="#8a12ab">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="burble" />
+                     </styleClass>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#changePasswordHandle" prefHeight="130.0" prefWidth="150.0" text="Change Password" textFill="#2b89a1">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <styleClass>
+                        <String fx:value="lightblue" />
+                        <String fx:value="btn" />
+                     </styleClass>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="-40.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="179.0" prefWidth="717.0" spacing="60.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#LogoutHandle" prefHeight="130.0" prefWidth="150.0" text="Logout" textFill="#c9626c">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="fav" />
+                     </styleClass>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="-20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <Separator opacity="0.79" orientation="VERTICAL" prefHeight="836.0" prefWidth="0.0" style="-fx-background-color: lightgray;" />
+      <VBox alignment="TOP_CENTER" prefHeight="836.0" prefWidth="371.0" spacing="30.0">
+         <children>
+            <ImageView fx:id="imageview" fitHeight="179.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets top="160.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label fx:id="welcomelabel" prefHeight="70.0" prefWidth="237.0" textFill="#277997">
+               <font>
+                  <Font name="Segoe Script Bold" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</FlowPane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="706.0" prefWidth="1101.0" stylesheets="@../Stylesheets/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="name" focusTraversable="false" layoutX="92.0" layoutY="152.0" prefHeight="44.0" prefWidth="290.0" promptText="Client Name" AnchorPane.bottomAnchor="543.0" AnchorPane.leftAnchor="92.0" AnchorPane.rightAnchor="716.0" AnchorPane.topAnchor="152.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TextField>
+      <TableView fx:id="tableView" focusTraversable="false" layoutX="551.0" layoutY="68.0" prefHeight="604.0" prefWidth="503.0">
+        <columns>
+          <TableColumn fx:id="tcid" prefWidth="45.0" text="Id" />
+          <TableColumn fx:id="tcname" prefWidth="66.0" text="Name" />
+            <TableColumn fx:id="tcemail" prefWidth="208.0" text="Email" />
+            <TableColumn fx:id="tcmobile" prefWidth="183.0" text="Mobile" />
+        </columns>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TableView>
+      <Button focusTraversable="false" layoutX="92.0" layoutY="341.0" mnemonicParsing="false" onAction="#deleteHandle" prefHeight="44.0" prefWidth="290.0" text="Delete" textFill="WHITE" AnchorPane.leftAnchor="92.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button focusTraversable="false" layoutX="92.0" layoutY="409.0" mnemonicParsing="false" onAction="#resetHandle" prefHeight="44.0" prefWidth="290.0" text="Reset" textFill="WHITE" AnchorPane.leftAnchor="92.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="backbtn" focusTraversable="false" layoutX="997.0" layoutY="14.0" mnemonicParsing="false" onAction="#backHandle" prefHeight="31.0" prefWidth="57.0" text="---&gt;" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button focusTraversable="false" layoutX="101.0" layoutY="273.0" mnemonicParsing="false" onAction="#searchHandle" prefHeight="44.0" prefWidth="290.0" text="search" textFill="WHITE" AnchorPane.leftAnchor="92.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="44.0" fitWidth="70.0" layoutX="59.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/admin.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="114.0" layoutY="45.0" prefHeight="31.0" prefWidth="230.0" text="Admin -- Home -- manage clients" textFill="#277997">
+         <font>
+            <Font name="Rockwell Condensed" size="20.0" />
+         </font>
+      </Label>
+      <Button focusTraversable="false" layoutX="94.0" layoutY="471.0" mnemonicParsing="false" onAction="#viewHandle" prefHeight="44.0" prefWidth="290.0" text="View" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

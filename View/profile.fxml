@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="706.0" prefWidth="1101.0" stylesheets="@../Stylesheets/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Separator layoutX="847.0" orientation="VERTICAL" prefHeight="706.0" prefWidth="0.0" />
+      <ImageView fx:id="imageview" fitHeight="170.0" fitWidth="200.0" layoutX="866.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="920.0" layoutY="372.0" mnemonicParsing="false" onAction="#uploadHandle" prefHeight="47.0" prefWidth="92.0" text="Upload" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView fx:id="tableview" layoutX="355.0" layoutY="119.0" prefHeight="459.0" prefWidth="454.0">
+        <columns>
+          <TableColumn fx:id="tcname" prefWidth="97.0" text="Name" />
+          <TableColumn fx:id="tcemail" prefWidth="206.0" text="Email" />
+            <TableColumn fx:id="tcmobile" prefWidth="150.0" text="Mobile" />
+        </columns>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TableView>
+      <TextField fx:id="name" focusTraversable="false" layoutX="60.0" layoutY="197.0" prefHeight="44.0" prefWidth="260.0" promptText="Name" AnchorPane.leftAnchor="60.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="email" focusTraversable="false" layoutX="60.0" layoutY="276.0" prefHeight="44.0" prefWidth="260.0" promptText="Email" AnchorPane.leftAnchor="60.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="mobile" focusTraversable="false" layoutX="60.0" layoutY="351.0" prefHeight="44.0" prefWidth="260.0" promptText="Mobile" AnchorPane.leftAnchor="60.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Button layoutX="1042.0" layoutY="14.0" mnemonicParsing="false" onAction="#backHandle" prefHeight="31.0" prefWidth="45.0" text="--&gt;" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="editbtn" layoutX="60.0" layoutY="432.0" mnemonicParsing="false" onAction="#editHandle" prefHeight="44.0" prefWidth="260.0" text="Edit" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="86.0" layoutY="492.0" mnemonicParsing="false" onAction="#viewHandle" prefHeight="44.0" prefWidth="260.0" text="View" textFill="WHITE" AnchorPane.leftAnchor="60.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="62.0" fitWidth="74.0" layoutX="40.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/profile.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="116.0" layoutY="38.0" text="Client---Home---Profile" textFill="#277997">
+         <font>
+            <Font name="Rockwell Condensed" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel" layoutX="896.0" layoutY="285.0" prefHeight="44.0" prefWidth="140.0" textFill="#277997">
+         <font>
+            <Font name="Segoe Script Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="86.0" layoutY="550.0" mnemonicParsing="false" onAction="#resetHandle" prefHeight="44.0" prefWidth="260.0" text="Reset" textFill="WHITE" AnchorPane.leftAnchor="60.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
